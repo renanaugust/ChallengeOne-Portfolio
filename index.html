@@ -311,6 +311,38 @@
                 </div>
             </div>
         </section>
+        <section class="sessao-orcamento" id="orcamento">
+  <div class="orcamento-wrapper">
+    <h1>Faça um orçamento</h1>
+    <form>
+      <label for="qtde">Qtde de Páginas</label>
+      <input type="number" min="1" name="qtde" id="qtde">
+      <label for="js">Preciso de um script JS</label>
+      <div class="checkbox-wrapper-6">
+        <input class="tgl tgl-light" id="cb1-6" name="js" type="checkbox"/>
+        <label class="tgl-btn" for="cb1-6">
+      </div>
+      <label>Layout</label>
+      <div class="group-layout">
+        <div>
+          <input type="radio" name="layout" id="layout-sim">
+          <label for="layout-sim">Preciso de um layout</label>
+        </div>
+        <div>
+          <input type="radio" name="layout" id="layout-nao">
+          <label for="layout-nao">Já tenho um layout</label>
+        </div>
+      </div>
+      <label for="prazo">Prazo</label>
+      <input type="range" name="prazo" id="prazo" min="1" max="10">
+      <div class="preco-wrapper">
+        <label id="preco-label">Preço:</label>
+        <div id="preco">R$ 0,00</div>
+      </div>
+      <button class="btn-2 btn-orcamento" type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
     </main>
 
     <footer>
@@ -360,5 +392,6 @@
         AOS.init();
     </script>
     <script src="./script.js"></script>
+    <script src="./orcamento.js"></script>
 </body>
 </html>
